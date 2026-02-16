@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+
+}
+
+h1, h2, h3 {
+    font-family: Georgia;
+}
+
+header {
+    background-color: darkgoldenrod;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.project {
+    background-color: black;
+    padding: 20px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.project>p{
+    color: aliceblue;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+}
+
+.text {
+    animation: fadeLoop 1.5s infinite;
+}
+
+@keyframes fadeLoop {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#skills {
+    margin-left: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#skills li {
+    position: relative;
+    padding-left: 30px;
+    margin: 6px 0;
+}
+
+#skills li::before {
+    content: "├──";
+    position: absolute;
+    left: 0;
+}
+
+#skills li:last-child::before {
+    content: "└──";
+}
+
+.p70::before {
+    content: "███████░░";
+}
+
+.p30::before {
+    content: "███░░░░░░";
+}
+
+.p40::before {
+    content: "████░░░░░";
+}
+
+.p50::before {
+    content: "█████░░░░";
+}
+
+.soft {
+    margin: 10px 0 30px;
+}
+
+.soft li {
+    margin: 6px 0;
+}
+
+.language p {
+    margin-top: 10px;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+.progress div {
+    height: 10px;
+    background-color: black;
+}
